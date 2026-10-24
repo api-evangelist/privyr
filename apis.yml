@@ -1,25 +1,86 @@
 aid: privyr
+
 name: Privyr
+
+image: https://d1z8p0imlkk5pt.cloudfront.net/static/img/privyr-logo-preview.1088fa1e0fb0.jpg
+
 description: 'Privyr is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
   backed by crane-venture-partners) and added to the network as a stub for full-pipeline profiling.'
+
 url: https://raw.githubusercontent.com/api-evangelist/privyr/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
-- Company
-apis: []
+- CRM
+- Lead Management
+- WhatsApp Automation
+- Marketing Agencies
+- Real Estate
+- Mobile App
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- crane-venture-partners
+
 common:
+- type: Plans
+  url: plans/privyr-plans-pricing.yml
+- type: Hosts
+  url: hosts/privyr-hosts.yml
+- type: Vendors
+  url: vendors/privyr-vendors.yml
+- type: TermsOfService
+  url: https://help.privyr.com/knowledge-base/terms-of-service/
+- type: PrivacyPolicy
+  url: https://www.privyr.com/privacy/
+- type: Pricing
+  url: https://www.privyr.com/pricing/
+- type: Login
+  url: https://www.privyr.com/login
+- type: Blog
+  url: https://www.privyr.com/blog
+- type: GettingStarted
+  url: https://help.privyr.com/categories/intro/
+- type: Documentation
+  url: https://help.privyr.com/
+- type: DomainSecurity
+  url: security/privyr-domain-security.yml
 - type: Website
   url: https://www.privyr.com/
+
+apis: []
+
+x-backed-by:
+- crane-venture-partners
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-24'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://www.privyr.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

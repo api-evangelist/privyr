@@ -1,0 +1,24 @@
+generated: '2026-10-24'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.privyr.com/pricing/
+sources:
+- https://www.privyr.com/pricing/
+name: Privyr pricing
+audience: business-product
+pricing_basis: per-seat
+plans:
+- name: Free Forever
+  price_text: $0 USD
+  price: 0
+  description: Free forever. No credit card required.
+- name: Privyr Pro
+  price_text: $ USD per user, per month (billed annually)
+  description: Unlimited pro features for salespeople, marketers, and growing teams.
+- name: Privyr Pro
+  price_text: $ USD per user, per month
+  description: Unlimited pro features for salespeople, marketers, and growing teams.
+- name: Privyr Ultimate
+  price_text: Contact sales for pricing
+  description: Unlock the full power of Privyr for larger teams and agencies.
+docs: https://www.privyr.com/pricing/
